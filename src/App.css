@@ -1,0 +1,48 @@
+body {
+  background: #ECEEEE;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(1fr, 4);
+  grid-template-areas: 'col1 col2 col3 col4';
+  grid-gap: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.kanbanItem {
+  display: flex;
+}
+.kanbanItem > div {
+  width: 100%;
+}
+.column {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: white;
+  min-width: 100%;
+}
+button {
+  background: none;
+  box-shadow: none;
+  border: none;
+  background: #EFdddd;
+}
+.column > header {
+  height: 30px;
+  text-align: center;
+}
+
+.column:nth-child(1) > header {
+  background: #8e6e95;
+}
+.column:nth-child(2) > header {
+  background: #39a59c;
+}
+.column:nth-child(3) > header {
+  background: #344759;
+}
+.column:nth-child(4) > header {
+  background: #e8741e;
+}
